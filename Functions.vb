@@ -4,8 +4,7 @@ Imports System.Threading
 Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.Runtime.InteropServices
 Imports System.IO
-Imports IBR_Calculator_Live.GeneralFunctions
-Imports IBR_Calculator_Live.Global_Declaration
+
 
 
 

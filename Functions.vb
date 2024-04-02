@@ -5,9 +5,6 @@ Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.Runtime.InteropServices
 Imports System.IO
 
-
-
-
 Public Class WordFunctions
 
 #Region "Members"
@@ -583,7 +580,7 @@ Genesis:
     End Function
 
     ''' <summary>
-    ''' To a columns to end of the table
+    ''' To add columns to end of the table
     ''' </summary>
     ''' <param name="table"> The table which needs to add columns </param>
     ''' <param name="noofColumns"> Count of columns </param>
@@ -593,6 +590,22 @@ Genesis:
         For x% = 0 To noofColumns - 1
             Thread.Sleep(min)
             table.Columns.Add()
+        Next
+        Return table
+
+    End Function
+
+    ''' <summary>
+    ''' To add row to end of the table
+    ''' </summary>
+    ''' <param name="table"> The table which needs to add rows </param>
+    ''' <param name="noofRows"> Count of rows </param>
+    ''' <returns> table </returns>
+    Public Shared Function addColumntoTable(table As Word.Table, noofRows As Integer)
+
+        For x% = 0 To noofRows - 1
+            Thread.Sleep(min)
+            table.Rows.Add()
         Next
         Return table
 
